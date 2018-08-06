@@ -16,7 +16,7 @@ This application facilitates the discovery, temporary hold, and final reservatio
 
 ## Design
 
-2 tables are considered Seat and SeatHold. These tables hold a relationship among themselves on the Seat Hold ID field.
+2 tables were constructed Seat and SeatHold. These tables hold a relationship among themselves on the Seat Hold ID field.
 The structure of the table is as follows:
 
 `Seat table`
@@ -29,11 +29,17 @@ The structure of the table is as follows:
 | Seat Hold ID  | Customer Email | Seats |
 | ------------- | ------------- | ----------- |  
 
+
+Seat table holds the seat related information and seat hold table holds the customer details and the seat hold Id.
+
 Initially all the seats will be in `OPEN` status. 
 
 Once a request is being made for holding the seats, the seat status will be upgraded to `HOLD` along with placing a timeout on them. A new entry will be placed in the seat hold table referencing to the hold seats with the customer email and a random generated Id.
 
-When a request is placed to reserve the seats a check is made if those seats where in `HOLD` or not. Based on that seats are moved to `RESERVED` status and a random generated string is . returned as reservation code.
+When a request is placed to reserve the seats a check is made on a combination of seat hold id and the customer email address if those seats where in `HOLD` or not. Based on that seats are moved to `RESERVED` status and a random generated string is . returned as reservation code.
+
+If the seats are not reserved after holding them for a given timeout then the seat status changes back to `OPEN` from `HOLD`
+and are made available for selection. 
 
 
 ## Building the application
