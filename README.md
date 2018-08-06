@@ -19,11 +19,13 @@ This application facilitates the discovery, temporary hold, and final reservatio
 2 tables are considered Seat and SeatHold. These tables hold a relationship among themselves on the Seat Hold ID field.
 The structure of the table is as follows:
 
-`Seat`
+`Seat table`
+
 | Seat ID  | Hold Time | Seat status  | Reserved Code | Seat Hold ID |          
 | ------------- | ------------- | ----------- | ------- | ---------- |  
 
-`Seat Hold`
+`Seat Hold table`
+
 | Seat Hold ID  | Customer Email | Seats |
 | ------------- | ------------- | ----------- |  
 
