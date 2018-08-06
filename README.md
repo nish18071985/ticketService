@@ -29,6 +29,11 @@ The structure of the table is as follows:
 | Seat Hold ID  | Customer Email | Seats |
 | ------------- | ------------- | ----------- |  
 
+Initially all the seats will be in `OPEN` status. 
+
+Once a request is being made for holding the seats, the seat status will be upgraded to `HOLD` along with placing a timeout on them. A new entry will be placed in the seat hold table referencing to the hold seats with the customer email and a random generated Id.
+
+When a request is placed to reserve the seats a check is made if those seats where in `HOLD` or not. Based on that seats are moved to `RESERVED` status and a random generated string is . returned as reservation code.
 
 
 ## Building the application
