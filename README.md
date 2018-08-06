@@ -44,11 +44,19 @@ and are made available for selection.
 
 ## Building the application
 
-By running the following command we can build the application into a JAR and run the test cases
+Once the git repo is cloned we need to go into the ticketService app folder
+
+`cd ticketService`
+
+Then by running the following command we can build the application into a JAR and run the test cases
 
 `mvn clean install`
 
 ## Running the application
+
+Once the git repo is cloned we need to go into the ticketService app folder
+
+`cd ticketService`
 
 Application can be run using the following command. A set of pre-defined interaction is provided with the application.
 
