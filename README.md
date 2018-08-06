@@ -16,7 +16,7 @@ This application facilitates the discovery, temporary hold, and final reservatio
 
 ## Design
 
-2 tables were constructed Seat and SeatHold. These tables hold a relationship among themselves on the Seat Hold ID field.
+2 tables were created Seat and SeatHold. These tables hold a relationship among themselves on the Seat Hold ID field.
 The structure of the table is as follows:
 
 `Seat table`
