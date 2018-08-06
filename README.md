@@ -38,7 +38,7 @@ When a request is placed to reserve the seats a check is made if those seats whe
 
 ## Building the application
 
-By running the following command we can build the application and run the test cases
+By running the following command we can build the application into a JAR and run the test cases
 
 `mvn clean install`
 
