@@ -61,3 +61,5 @@ Once the git repo is cloned we need to go into the ticketService app folder
 Application can be run using the following command. A set of pre-defined interaction is provided with the application.
 
 `mvn spring-boot:run`
+
+To stop the app, press CTRL+C
