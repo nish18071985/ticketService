@@ -11,7 +11,7 @@ This application facilitates the discovery, temporary hold, and final reservatio
 5) Method cleanUpTimeouts checks the hold timeout and makes the seat available once the timeout expires.
 6) In memory H2 database is being used to build the application along with Springboot and Spring JPA.
 7) SeatHold is a random generated positive number and reservation code is a alphanumeric string of size 10.
-8) A seat can hold 3 status OPEN, HOLD, RESERVED.
+8) A seat can have 3 status OPEN, HOLD, RESERVED.
 9) A sample set is provided that runs the application.
 
 ## Design
