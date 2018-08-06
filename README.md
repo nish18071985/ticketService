@@ -34,9 +34,11 @@ The structure of the table is as follows:
 ## Building the application
 
 By running the following command we can build the application and run the test cases
+
 `mvn clean install`
 
 ## Running the application
 
 Application can be run using the following command. A set of pre-defined interaction is provided with the application.
+
 `mvn spring-boot:run`
